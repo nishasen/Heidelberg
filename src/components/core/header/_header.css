@@ -1,0 +1,30 @@
+.header {
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.hidden {
+    visibility: visible;
+    background-color: var(--color_blur-background);
+    backdrop-filter: blur(8px);
+}
+
+.no-background {
+    background-color: transparent;
+    backdrop-filter: blur(0);
+    color: var(--color_white);
+}
+
+@media only screen and (max-width: 460px) {
+    .header {
+        padding: 0 2rem;
+    }
+}

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Footer = props => {
   return (
-    <div>Footer</div>
+    <div style={{height: "3000px"}}>Footer</div>
   )
 };
 

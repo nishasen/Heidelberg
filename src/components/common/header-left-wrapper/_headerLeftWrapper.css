@@ -1,0 +1,10 @@
+.header-left-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.left-icon-button {
+    display: flex;
+    gap: 1rem;
+}

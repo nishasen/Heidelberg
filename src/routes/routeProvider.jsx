@@ -1,15 +1,15 @@
 import React from 'react';
-import { Route, Routes } from 'react-router';
-import { HomePage, Reseach, Study, Transfer } from '../modules';
+import { Route, Routes } from 'react-router-dom';
+import { HomePage, Research, Study, Transfer, University } from '../modules';
 
 const RouteProvider = () => {
   return (
     <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/university" element={<HomePage />} />
+        <Route path="/university" element={<University />} />
         <Route path="/transfer" element={<Transfer />} />
         <Route path="/study" element={<Study />} />
-        <Route path="/reserch" element={<Reseach />} />
+        <Route path="/research" element={<Research />} />
     </Routes>
   )
 };
