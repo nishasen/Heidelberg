@@ -6,10 +6,13 @@ import HomepageNavigator from '../../components/common/homepage-navigator/homepa
 
 const HomePage = props => {
   const [selectedTab, setSelectedTab] = useState(homepageInfo[0]);
+  const handleTabChange = (tab) => {
+    setSelectedTab(tab);
+  }
   return (
     <div>
       <MainBanner banner={selectedTab.image}>
-        <HomepageNavigator pageInfo={selectedTab} selectedItem={selectedTab} />
+        <HomepageNavigator pageInfo={selectedTab} selectedItem={selectedTab} handleTabChange={handleTabChange} />
       </MainBanner>
     </div>
   )

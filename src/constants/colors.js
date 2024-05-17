@@ -8,5 +8,6 @@ export const colors = {
     $color_quick_link_background_grey: "#222222",
     $color_footer_background_grey: "#171717",
     $color_main_banner_grey: "#bdb7af",
+    $color_inactive_text_grey: "#c3bdb4",
 }
     

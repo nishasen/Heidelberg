@@ -2,7 +2,9 @@
     display: flex;
     flex-direction: column;
     color: var(--color_white);
-    gap: 12rem;
+    gap: 15rem;
+    margin-top: auto;
+
 }
 
 .navigator-title-wrapper 
@@ -13,12 +15,77 @@
 
 .navigator-subtitle {
     font-size: 5rem;
-    width: 20rem;
     text-shadow: 0 0 1rem var(--color_text-grey);
 }
 
 .navigator {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 100%
+}
+
+.navigator-info {
+    height: 2rem;
+    border-bottom: 1px solid var(--color_inactive-text-grey);
+    color: var(--color_inactive-text-grey);
+}
+
+.navigator-info:hover {
+    border-bottom: 2px solid var(--color_white);
+    color: var(--color_white);
+}
+
+.selected-navigator {
+    border-bottom: 2px solid var(--color_white);
+    color: var(--color_white);
+}
+
+@media only screen and (max-width: 1100px) {
+    .homepage-navigator {
+        gap: 10rem;
+    }
+
+    .navigator-title {
+        font-size: 1.5rem;
+    }
+
+    .navigator-subtitle {
+        font-size: 3rem;
+    }
+
+    .navigator {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .homepage-navigator {
+        gap: 3rem;
+    }
+
+    .navigator-title {
+        font-size: 1rem;
+    }
+
+    .navigator-subtitle {
+        font-size: 2rem;
+    }
+
+    .navigator-info {
+        height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .homepage-navigator {
+        gap: 1rem;
+    }
+
+    .navigator-title {
+        font-size: 0.8rem;
+    }
+
+    .navigator-subtitle {
+        font-size: 1.5rem;
+    }
 }

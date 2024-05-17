@@ -5,7 +5,7 @@ import { Button } from '../../common';
 import { homepageInfo } from '../../../constants/homepageInfo';
 
 const HomepageNavigator = props => {
-    const { pageInfo } = props;
+    const { pageInfo, handleTabChange, selectedItem } = props;
   return (
     <div className='homepage-navigator'>
         <div className='navigator-title-wrapper'>
@@ -16,7 +16,11 @@ const HomepageNavigator = props => {
             {pageInfo.learnMore && <Button title='Learn More'/>}
         </div>
         <div className='navigator'>
-            {homepageInfo.map((info) => <div className='navigator-info'>{info.title}</div>)}
+            {homepageInfo.map((info) => 
+                <div className={`navigator-info ${selectedItem.id===info.id && 'selected-navigator'}`} 
+                     onClick={()=> handleTabChange(info)}>
+                    {info.title}
+                </div>)}
         </div>
     </div>
   )
@@ -24,6 +28,8 @@ const HomepageNavigator = props => {
 
 HomepageNavigator.propTypes = {
     pageInfo: PropTypes.array.isRequired,
+    handleTabChange: PropTypes.func,
+    selecteditem: PropTypes.object,
 };
 
 export default HomepageNavigator;
