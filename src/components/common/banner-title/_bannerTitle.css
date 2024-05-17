@@ -3,6 +3,7 @@
   color: var(--color_white);
   text-transform: uppercase;
   text-shadow: 0 0 1rem var(--color_text-grey);
+  margin-top: auto;
 }
 
 @media only screen and (max-width: 1000px) {
