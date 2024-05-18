@@ -8,10 +8,6 @@
     cursor: pointer;
 }
 
-.hide-title {
-    display: none;
-}
-
 .transparent {
     background-color: transparent;
 }
@@ -28,7 +24,7 @@
     color: var(--color_navigate-button-pink);
 }
 
-.button:hover .hide-title {
-    display: inline;
+.pink:hover {
+    background-color: var(--color_navigate-button-hover);
 }
 

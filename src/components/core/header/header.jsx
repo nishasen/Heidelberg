@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import './_header.css';
 import { HeaderLeftWrapper, Logo } from '../../common';
+import './_header.scss';
 
 const Header = props => {
   const [showHeader, setShowHeader] = useState(true);
@@ -28,10 +28,8 @@ const Header = props => {
 
   return (
     <div className={`header ${showHeader && 'hidden'} ${lastScrollY===0 && 'no-background'}`}>
-      <div>
-        <HeaderLeftWrapper lastScrollY={lastScrollY} />
-      </div>
-      <div><Logo lastScrollY={lastScrollY} /></div>
+      <HeaderLeftWrapper lastScrollY={lastScrollY} />
+      <Logo lastScrollY={lastScrollY} />
     </div>
   )
 };

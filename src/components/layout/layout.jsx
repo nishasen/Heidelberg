@@ -1,20 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Footer, Header, QuickLinkContainer } from '../core';
 import RouteProvider from '../../routes/routeProvider';
-import './_layout.css';
 
-const Layout = props => {
+const Layout = () => {
   return (
-    <div className='layout'>
+    <div>
       <Header />
       <RouteProvider />
       <QuickLinkContainer />
       <Footer />
     </div>
   )
-}
+};
 
-Layout.propTypes = {}
-
-export default Layout
+export default Layout;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import "./_bannerTitle.css";
+import "./_bannerTitle.scss";
 
 const BannerTitle = props => {
     const { title } = props;

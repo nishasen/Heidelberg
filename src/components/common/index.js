@@ -6,3 +6,4 @@ export { default as BannerTitle } from './banner-title/bannerTitle';
 export { default as Button } from './button/button';
 export { default as HomepageNavigator } from './homepage-navigator/homepageNavigator';
 export { default as NavigateLinkBox } from './navigate-link-box/navigateLinkBox';
+export { default as Portal } from './portal/portal';

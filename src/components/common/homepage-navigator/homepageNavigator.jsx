@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './_homepageNavigator.css';
+import './_homepageNavigator.scss';
 import { Button } from '../../common';
 import { homepageInfo } from '../../../constants/homepageInfo';
 

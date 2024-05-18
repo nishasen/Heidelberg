@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { IconButton, Navigation } from '../../common';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { BiSearch } from 'react-icons/bi';
-import './_headerLeftWrapper.css';
+import './_headerLeftWrapper.scss';
 import { colors } from '../../../constants/colors';
 
 const HeaderLeftWrapper = props => {

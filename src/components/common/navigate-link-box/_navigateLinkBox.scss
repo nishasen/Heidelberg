@@ -6,17 +6,17 @@
     gap: 1rem;
     width: 100%;
     cursor: pointer;
-}
 
-.learn-more-box {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
+    .learn-more-box {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
 
-.learn-more-title {
-    color: var(--color_navigate-button-pink);
-    display: none;
+        .learn-more-title {
+            color: var(--color_navigate-button-pink);
+            display: none;
+        }
+    }
 }
 
 .navigation-link-box:hover {

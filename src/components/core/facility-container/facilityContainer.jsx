@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavigateLinkBox } from '../../common';
-import "./_facilityContainer.css";
 import { useGlobal } from '../../../context/globalContext';
+import "./_facilityContainer.scss";
 
 const FacilityContainer = props => {
   const { facilities } = props;

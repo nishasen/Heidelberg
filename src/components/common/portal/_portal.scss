@@ -1,0 +1,117 @@
+.portal-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    .portal-wrapper {
+        grid-area: 1/1/2/2;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        gap: 15rem;
+        .portal-image-container {
+            .portal-image {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: 10% 0;
+            }
+        }
+        .portal-info-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 2rem;
+            width: 30rem;
+            .portal-name {
+                font-size: 3.6rem;
+                text-transform: uppercase;
+            }
+            .portal-descp {
+                color: var(--color_text-grey);
+            }
+            .portal-nav-links {
+                padding: 1rem 0rem;
+                width: 100%;
+                
+                .links {
+                    cursor: pointer;
+                    height: 3.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-bottom: 1px solid var(--color_inactive-text-grey)
+                }
+
+                .links:last-child {
+                    border-bottom: none;
+                }
+
+                .links:hover {
+                    color: var(--color_navigate-button-pink)
+                }
+            }
+        }
+    }
+
+    .portal-wrapper-right {
+        flex-direction: row-reverse;
+    }
+
+    .portal-wrapper-left {
+        flex-direction: row;
+    }
+
+    .portal-name-background {
+        grid-area: 1/1/2/2;
+        z-index: 0;
+        margin-top: auto;
+        margin-bottom: 5rem;
+        font-size: 10rem;
+        color: var(--color_portal-grey);
+    }
+
+    .portal-background-right {
+        margin-left: auto;
+        margin-right: 5rem;
+    }
+
+    .portal-background-left {
+        margin-right: auto;
+        margin-left: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .portal-content {
+        .portal-wrapper {
+            gap: 10rem;
+            }
+        }
+}
+
+@media only screen and (max-width: 1500px) {
+    .portal-content {
+        .portal-wrapper {
+            gap: 6rem;
+            }
+        }
+}
+
+@media only screen and (max-width: 1100px) {
+    .portal-content {
+        .portal-wrapper {
+            flex-direction: column;
+            gap: 2rem;
+            .portal-info-container {
+                width: 100%;
+                .portal-name {
+                    font-size: 2.6rem;
+                }
+            }
+            }
+        }
+
+        .portal-name-background {
+            display: none;
+        }
+}

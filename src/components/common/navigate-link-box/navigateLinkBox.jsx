@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { BsArrowRight } from 'react-icons/bs';
 import { colors } from '../../../constants/colors';
-import './_navigateLinkBox.css';
+import './_navigateLinkBox.scss';
 
 const NavigateLinkBox = props => {
     const { navigateToTitle, id, handleLearnMore } = props;
