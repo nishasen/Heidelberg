@@ -5,7 +5,7 @@ import './_iconButton.css';
 const IconButton = props => {
     const { children } = props;
   return (
-    <button className='icon-button'>{children}</button>
+    <button className='icon-button' {...props}>{children}</button>
   )
 }
 

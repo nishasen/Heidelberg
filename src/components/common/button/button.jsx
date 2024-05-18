@@ -8,8 +8,8 @@ import { colors } from '../../../constants/colors';
 const Button = props => {
     const {title, hiddentext, arrowcolor, background} =props;
   return (
-    <button className={`button ${background} ${arrowcolor}`}>
-        {!hiddentext && title}
+    <button className={`button ${background} ${arrowcolor}`} {...props}>
+        <span className={hiddentext && 'hide-title'}>{title}</span>
         <BsArrowRight color={arrowcolor==="light" ? colors.$color_white : colors.$color_navigate_button_pink} size={25} />
     </button>
   )

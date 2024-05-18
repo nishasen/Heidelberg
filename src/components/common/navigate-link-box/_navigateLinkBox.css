@@ -1,0 +1,29 @@
+.navigation-link-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.learn-more-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.learn-more-title {
+    color: var(--color_navigate-button-pink);
+    display: none;
+}
+
+.navigation-link-box:hover {
+    transition: 500ms ease-in;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.navigation-link-box:hover .learn-more-title {
+    display: block;
+}

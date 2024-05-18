@@ -1,8 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { MainBanner } from '../../components/core';
+import { FacilityContainer, MainBanner } from '../../components/core';
 import { BannerTitle } from '../../components/common';
 import TransferBanner from '../../assets/images/transfer.jpg';
+import { facilities } from '../../constants/facilities';
 
 const Transfer = props => {
   return (
@@ -10,10 +10,9 @@ const Transfer = props => {
       <MainBanner banner={TransferBanner}>
         <BannerTitle title="Transfer" />
       </MainBanner>
+      <FacilityContainer facilities={facilities.transfer}/>
     </div>
   )
 };
-
-Transfer.propTypes = {};
 
 export default Transfer;

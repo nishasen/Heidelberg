@@ -1,8 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { MainBanner } from '../../components/core';
+import { FacilityContainer, MainBanner } from '../../components/core';
 import UniversityBanner from '../../assets/images/university.jpg';
 import { BannerTitle } from '../../components/common';
+import { facilities } from '../../constants/facilities';
 
 const University = props => {
   return (
@@ -10,10 +10,9 @@ const University = props => {
       <MainBanner banner={UniversityBanner}>
         <BannerTitle title="University" />
       </MainBanner>
+      <FacilityContainer facilities={facilities.university}/>
     </div>
   )
 };
-
-University.propTypes = {};
 
 export default University;
