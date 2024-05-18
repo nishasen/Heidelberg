@@ -1,0 +1,108 @@
+.footer-container {
+    width: 100%;    
+    background-color: var(--color_footer-background-grey);
+    color: var(--color_footer-text-grey);
+    font-size: 0.8rem;
+    display: flex;
+    padding: 2rem 6rem;
+    gap: 20%;
+    .footer-policy-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .languages {
+            display: flex;
+            gap: 1.2rem;
+           width: 20rem;
+            .lang {
+                cursor: pointer;
+                height: 2rem;
+            }
+            .selected-lang {
+                border-bottom: 2px solid var(--color_footer-text-grey);
+            }
+
+            .lang:hover {
+                border-bottom: 2px solid var(--color_footer-text-grey);
+            }
+        }
+        .policies {
+            display: flex;
+            gap: 1rem;
+            .policy:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+    .footer-copyright-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .footer-links-and-copyrights {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            .links {
+                display: flex;
+                gap: 1rem;
+                .link-icons:hover {
+                    cursor: pointer;
+                    color: var(--color_white);
+                }
+            }
+            .university-copyright {
+                width: 11rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .footer-container {
+        gap: 10%;
+        padding: 2rem 4rem;
+        .footer-copyright-wrapper {
+            .footer-links-and-copyrights {
+                gap: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .footer-container {
+        gap: 5%;
+        padding: 2rem 2rem;
+
+        .footer-copyright-wrapper {
+            .footer-links-and-copyrights {
+                gap: 1.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .footer-container {
+        gap: 5%;
+        padding: 2rem 2rem;
+
+        .footer-copyright-wrapper {
+            .footer-links-and-copyrights {
+               flex-direction: column;
+               align-items: flex-start;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+        .footer-copyright-wrapper {
+            gap: 1rem;
+        }
+    }
+}
