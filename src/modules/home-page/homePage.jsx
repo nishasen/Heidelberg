@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FacilityContainer, MainBanner, PortalContainer } from '../../components/core';
+import { FacilityContainer, MainBanner, PortalContainer, SustainabilityContainer } from '../../components/core';
 import { homepageInfo } from '../../constants/homepageInfo';
 import HomepageNavigator from '../../components/common/homepage-navigator/homepageNavigator';
 import { facilities } from '../../constants/facilities';
@@ -21,6 +21,7 @@ const HomePage = props => {
       </MainBanner>
       <FacilityContainer facilities={facilities.homepage}/>
       <PortalContainer />
+      <SustainabilityContainer />
     </div>
   )
 };

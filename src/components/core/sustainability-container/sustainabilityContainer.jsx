@@ -1,12 +1,21 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { sustainability } from '../../../constants/sustainibility';
+import { Button } from '../../common';
+import './_sustainabilityContainer.scss';
 
-const SustainabilityContainer = props => {
+const SustainabilityContainer = () => {
   return (
-    <div>SustainabilityContainer</div>
+    <div className='sustainability-container'>
+      <img src={sustainability.image} alt="" className='sustainability-image' />
+      <div className='image-overlay'></div>
+      <div className='sustainability-content'>
+        <h1 className='sustainability-title'>{sustainability.title}</h1>
+        <span className='sustainability-descp'>{sustainability.descp}</span>
+        <Button title={sustainability.title} background="pink" />
+      </div>
+    </div>
   )
 };
 
-SustainabilityContainer.propTypes = {};
 
 export default SustainabilityContainer;
