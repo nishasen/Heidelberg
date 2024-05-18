@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import { portals } from '../../../constants/portals';
 import { Portal } from '../../common';
 import './_portalContainer.scss';
 import { useNavigate } from 'react-router';
 
-const PortalContainer = props => {
+const PortalContainer = () => {
   const navigate = useNavigate();
   const handlePortalClick = (to) => {
     navigate(to);
@@ -26,7 +25,5 @@ const PortalContainer = props => {
     </div>
   )
 };
-
-PortalContainer.propTypes = {};
 
 export default PortalContainer;
