@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,65 +6,60 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+
+To install the dependencies of the project.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## `Features covered in the project`
+ # Home Page
+ ![image](https://github.com/nishasen/Heidelberg/assets/43262505/43d7ae7e-ecbf-403b-b0db-58d42f0858da)
 
-### `npm test`
+ # Header - Based on scoll the header changes its background
+ ![image](https://github.com/nishasen/Heidelberg/assets/43262505/4a189fbc-28ba-412c-974c-32e6e4c832bc)
+ ![image](https://github.com/nishasen/Heidelberg/assets/43262505/a5038516-592e-45e7-8739-70a2be6bdaa0)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ # Overlays
+ ![image](https://github.com/nishasen/Heidelberg/assets/43262505/f33e9592-dc52-4e27-917a-443ea68586b4)
 
-### `npm run build`
+ # Main banner which can be changed based on the below navigations
+ ![image](https://github.com/nishasen/Heidelberg/assets/43262505/7ff0e5ef-7c7e-4208-b840-c75354fbf378)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ # Components
+ ![image](https://github.com/nishasen/Heidelberg/assets/43262505/a785e886-c3cf-4dd2-98ef-013adbe8a917)
+ ![image](https://github.com/nishasen/Heidelberg/assets/43262505/59f413ca-43b6-455c-8255-4dfc50a84006)
+ ![image](https://github.com/nishasen/Heidelberg/assets/43262505/8d4b3096-0714-4b20-a204-1e7aa01a636d)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ # Quicklinks and Footer
+ ![image](https://github.com/nishasen/Heidelberg/assets/43262505/39714478-b31c-4e8a-9f02-cbca560f3c7d)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ # Child pages
+ ![image](https://github.com/nishasen/Heidelberg/assets/43262505/192902d6-9b81-41f1-80ff-cf168f2b2003)
+ ![image](https://github.com/nishasen/Heidelberg/assets/43262505/c3310dcb-db88-4f3e-94f9-82289715af13)
 
-### `npm run eject`
+ # Responsiveness
+ ![image](https://github.com/nishasen/Heidelberg/assets/43262505/afc2a346-2728-4092-99c5-8ad6e895391f)
+![image](https://github.com/nishasen/Heidelberg/assets/43262505/00a0a965-20ec-419a-92d1-4e4f123f5e7d)
+![image](https://github.com/nishasen/Heidelberg/assets/43262505/760f9116-b9f6-43d5-b078-9c34d1837d15)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
