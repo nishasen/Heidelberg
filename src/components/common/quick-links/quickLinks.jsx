@@ -63,7 +63,7 @@ const QuickLinks = props => {
             {(openQuickLink[quickLink.key] || quickLink.key==='contacts') && 
             <div className='links'>
               {quickLink.links.map((link, index) => 
-                <Link onClick={ (event) => event.preventDefault() }
+                <Link to={link.link} onClick={ (event) => link.link === "/" && event.preventDefault() }
                       className={`link 
                                   ${(overlay && index < 4 && quickLink.key==='mainMenu') 
                                   && 'highlight-link'}`}>
