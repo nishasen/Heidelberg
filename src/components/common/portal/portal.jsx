@@ -35,6 +35,7 @@ const Portal = props => {
 Portal.propTypes = {
     portal: PropTypes.array.isRequired,
     handlePortalClick: PropTypes.func.isRequired,
+    handlePortalLinkClick: PropTypes.func.isRequired,
 }
 
 export default Portal

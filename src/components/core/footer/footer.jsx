@@ -1,36 +1,16 @@
 import React from 'react';
 import { footerLinks } from '../../../constants/footerLinks';
-import { useGlobal } from '../../../context/globalContext';
-import { useNavigate } from 'react-router';
 import './_footer.scss';
+import { LanguageContainer, PolicyContainer } from '../../common';
 
 const Footer = () => {
-  const { lang, setLang } = useGlobal();
-  const navigate = useNavigate();
-  const { languages, policies, photoCredits, social, copyright } = footerLinks;
-
-  const handleLanguage = (lang) => {
-    setLang(lang);
-  }
+  const { photoCredits, social, copyright } = footerLinks;
 
   return (
     <div className='footer-container'>
       <div className='footer-policy-wrapper'>
-        <div className='languages'>
-          <span>Diese Webseite auf</span>
-          {languages.map(({language}) => 
-            <span className={`lang ${lang===language && 'selected-lang'}`} 
-                  onClick={() => handleLanguage(language)}>
-              {language}
-            </span>)}
-        </div>
-        <div className='policies'>
-        {policies.map(({name, link}) => 
-            <span className="policy" 
-                  onClick={() => navigate(link)}>
-              {name}
-            </span>)}
-        </div>
+        <LanguageContainer />
+        <PolicyContainer />
       </div>
       <div className='footer-copyright-wrapper'>
         <div className='footer-links-and-copyrights'>

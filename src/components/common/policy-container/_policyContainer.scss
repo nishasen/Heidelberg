@@ -1,0 +1,10 @@
+.policies {
+    display: flex;
+    gap: 1rem;
+    color: var(--color_footer-text-grey);
+    .policy:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: var(--color_white);
+    }
+}

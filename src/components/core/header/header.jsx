@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import { HeaderLeftWrapper, Logo } from '../../common';
 import './_header.scss';
 
-const Header = props => {
+const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -33,7 +32,5 @@ const Header = props => {
     </div>
   )
 };
-
-Header.propTypes = {};
 
 export default Header;

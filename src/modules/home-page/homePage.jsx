@@ -5,7 +5,7 @@ import HomepageNavigator from '../../components/common/homepage-navigator/homepa
 import { facilities } from '../../constants/facilities';
 import { useGlobal } from '../../context/globalContext';
 
-const HomePage = props => {
+const HomePage = () => {
   const { handleLearnMore } = useGlobal();
   const [selectedTab, setSelectedTab] = useState(homepageInfo[0]);
   const handleTabChange = (tab) => {

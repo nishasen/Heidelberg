@@ -4,7 +4,7 @@ import { BannerTitle } from '../../components/common';
 import StudyBanner from '../../assets/images/study.jpg';
 import { facilities } from '../../constants/facilities';
 
-const Study = props => {
+const Study = () => {
   return (
     <div>
       <MainBanner banner={StudyBanner}>

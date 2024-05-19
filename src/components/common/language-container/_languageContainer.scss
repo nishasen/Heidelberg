@@ -1,0 +1,18 @@
+.languages {
+    display: flex;
+    gap: 1.2rem;
+   width: 20rem;
+   color: var(--color_footer-text-grey);
+    .lang {
+        cursor: pointer;
+        height: 2rem;
+    }
+    .selected-lang {
+        border-bottom: 2px solid var(--color_footer-text-grey);
+    }
+
+    .lang:hover {
+        color: var(--color_white);
+        border-bottom: 2px solid var(--color_white);
+    }
+}

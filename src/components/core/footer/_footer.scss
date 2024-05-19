@@ -10,32 +10,6 @@
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        .languages {
-            display: flex;
-            gap: 1.2rem;
-           width: 20rem;
-            .lang {
-                cursor: pointer;
-                height: 2rem;
-            }
-            .selected-lang {
-                border-bottom: 2px solid var(--color_footer-text-grey);
-            }
-
-            .lang:hover {
-                color: var(--color_white);
-                border-bottom: 2px solid var(--color_white);
-            }
-        }
-        .policies {
-            display: flex;
-            gap: 1rem;
-            .policy:hover {
-                cursor: pointer;
-                text-decoration: underline;
-                color: var(--color_white);
-            }
-        }
     }
     .footer-copyright-wrapper {
         display: flex;

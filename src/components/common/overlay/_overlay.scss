@@ -1,0 +1,112 @@
+.overlay-wrapper {
+    display: grid;
+    grid-template-columns: auto 5rem;
+    grid-template-areas: "content close";
+    height: 100%;
+    color: var(--color_white);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.5s ease;
+    z-index: 5;
+    overflow-y: auto;
+    .content-container {
+        grid-area: content;
+        padding: 3rem 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        .logo-wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            .close-icon {
+                cursor: pointer;
+                visibility: hidden;
+            }
+        }
+        .title-wrapper {
+            font-size: 5rem;
+            margin-top: -6rem;
+            text-transform: uppercase;
+        }
+
+        .move-content-wrapper {
+            margin-top: 5rem;
+        }
+    }
+
+    .dark-background {
+        background-color: var(--color_quick-link-background-grey);
+    }
+
+    .light-background {
+        background-color: var(--color_navigate-button-pink);
+    }
+
+
+    .close-overlay-wrapper {
+        grid-area: close;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        .close-icon {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5s ease;
+        }
+
+        .close-icon:hover {
+            transform: rotate(90deg);
+        }
+
+        .close-text {
+            text-transform: uppercase;
+            writing-mode: vertical-rl;
+            rotate: -180deg;
+            cursor: pointer;
+        }
+    }
+
+    .dark-close-background {
+        background-color: var(--color_footer-background-grey);
+    }
+
+    .light-close-background {
+        background-color: var(--color_navigate-button-hover);
+    }
+}
+
+.show-overlay {
+    left: 0;
+    transition: left 0.5s ease;
+}
+
+@media only screen and (max-width: 730px) {
+    .overlay-wrapper  {
+        grid-template-columns: auto;
+        grid-template-areas: "content";
+        .content-container {
+            .logo-wrapper {
+                .close-icon {
+                    visibility: visible;
+                }
+            }
+            .title-wrapper {
+                font-size: 3rem;
+                margin-top: -3rem;
+            }
+        }
+
+        .close-overlay-wrapper {
+            display: none;
+        }
+    }
+}

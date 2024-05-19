@@ -4,7 +4,7 @@ import UniversityBanner from '../../assets/images/university.jpg';
 import { BannerTitle } from '../../components/common';
 import { facilities } from '../../constants/facilities';
 
-const University = props => {
+const University = () => {
   return (
     <div>
       <MainBanner banner={UniversityBanner}>

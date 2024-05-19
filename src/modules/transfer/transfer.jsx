@@ -4,7 +4,7 @@ import { BannerTitle } from '../../components/common';
 import TransferBanner from '../../assets/images/transfer.jpg';
 import { facilities } from '../../constants/facilities';
 
-const Transfer = props => {
+const Transfer = () => {
   return (
     <div>
       <MainBanner banner={TransferBanner}>

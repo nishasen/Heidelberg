@@ -1,0 +1,40 @@
+.overlay-search-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .search-container {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        height: 3rem;
+        .input {
+            height: inherit;
+            padding: 1rem;
+            color: var(--color_white);
+            font-size: 2rem;
+            background-color: transparent;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid var(--color_text-grey);
+        }
+    }
+    .link {
+        color: var(--color_white);
+
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .overlay-search-content {
+        .search-container {
+            height: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+
+            .input {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

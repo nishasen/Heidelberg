@@ -18,7 +18,7 @@ const MainBanner = props => {
 
 MainBanner.propTypes = {
   banner: PropTypes.any,
-
+  children: PropTypes.element,
 };
 
 export default MainBanner;
